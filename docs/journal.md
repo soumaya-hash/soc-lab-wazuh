@@ -18,3 +18,9 @@
 - Agent Windows : erreurs de syntaxe PowerShell (commandes chaînées
   sans ';') puis nom de service incorrect (WazuhSvc, pas wazuh-agent)
 - ✅ 2 agents Active dans le dashboard
+
+## Jour 5 — Sysmon
+- Sysmon64 installé avec config sysmon-modular (Olaf Hartong)
+- Canal Microsoft-Windows-Sysmon/Operational ajouté à ossec.conf
+- ⚠️ Piège : le service Wazuh Windows s'appelle WazuhSvc
+- ✅ Events Sysmon visibles dans Wazuh (Security Events)
